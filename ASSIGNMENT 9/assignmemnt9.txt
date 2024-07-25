@@ -1,0 +1,84 @@
+ANS1)
+#include<iostream>
+using namespace std;
+void square_of_natural_number(int n){
+int sq;
+for (int i = 1; i <=n; i++)
+{
+    sq= i*i;
+    cout<<sq<<" ";
+}
+
+    
+}
+int main() {
+int n;
+cout<<"Enter a natural number : ";
+cin>>n;
+square_of_natural_number(n);
+return 0;
+}
+ANS2)
+#include<iostream>
+using namespace std;
+float area_of_circle(float radius){
+    float area = 3.1415*radius*radius;
+    return area;
+}
+int main() {
+float radius;
+cout<<"Enter the radius of the circle : ";
+cin>>radius;
+cout<<"The area of the circle is : "<<area_of_circle(radius);
+return 0;
+}
+ANS3)
+#include<iostream>
+using namespace std;
+void odd_numbers(int a,int b){
+    for (int i = a; i <b; i++)
+    {
+        if(i%2!=0) cout<<i<<" ";
+    }
+    
+}
+int main() {
+int a,b;
+cout<<"Enter the first number : ";
+cin>>a;
+cout<<"enter the second number : ";
+cin>>b;
+odd_numbers(a,b);
+return 0;
+}
+
+ANS4)
+#include<iostream>
+using namespace std;
+void count(int n){
+    int count=0,sq=n*n;
+    
+    while (n>0)
+    {
+        n = n/10;
+        count++;
+    }
+    cout<<"The number of digits in the number is : "<<count<<endl;
+    cout<<"The square of the number is : "<<sq;
+}
+int main() {
+int n;
+cout<<"Enter a number : ";
+cin>>n;
+count(n);
+return 0;
+}
+
+ANS5)
+The minimum function required in the c++ program is 1
+ANS6)
+True 
+False
+ANS7)
+Yes a function name can be used multiple times without any conflicts this process is called fuction overloding 
+
